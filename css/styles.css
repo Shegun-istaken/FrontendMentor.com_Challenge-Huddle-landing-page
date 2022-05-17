@@ -1,0 +1,223 @@
+
+
+/* GLOBAL */
+:root{
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --pink: hsl(322, 100%, 66%);
+}
+
+html{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open-Sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+h1{
+    font-size:3vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+}
+
+h2{
+    font-size:1.3vw;
+    font-family: 'Open-Sans', sans-serif;
+    font-weight:400;
+
+}
+
+/*  HEADER */
+
+header{
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-position: top right;
+    background-color:var(--pale-cyan);
+}
+
+.head-content{
+    position:relative;
+    width:85%;
+    margin: 0px auto;
+    padding-top:50px;
+    padding-bottom:100px;
+}
+.head-content h1{
+    width:90%;
+}
+
+.head-content h2{
+    line-height:150%;
+    font-weight:400;
+}
+
+img.hero-image{
+    width: 50%;
+    height:auto;
+    flex-basis:55%;
+
+}
+
+img.logo{
+    width:20%;
+    height:auto;
+}
+
+button.topbutton{
+    position:absolute;
+    right:0px;
+    top:50px;
+    background-color:white;
+    padding:11px 55px;
+    font-family:'Poppins', sans-serif;
+    font-size:12px;
+    font-weight:700;
+    border-radius:30px;
+    border:none;
+    color:var(--dark-cyan);
+}
+
+button.getstarted{
+    background-color:var(--pink);
+    border:none;
+    padding: 3% 11%;
+    border-radius:5vw;
+    font-family:'Poppins', sans-serif;
+    font-size:12px;
+    font-weight:700;
+    color:white;
+    margin-top:3%;
+}
+
+.header-flex{
+    display:inline-flex;
+    align-items:flex-start;
+    padding-top:5%;
+    column-gap: 4%;
+}
+.header-text{
+    align-self:center;
+}
+
+/* ADVERT SECTIONS */
+.adverts img{
+    width:30%;
+    height:auto;
+    border:0px;
+}
+
+.adverts h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    font-size:1.7vw;
+    margin-bottom:3%;
+    color: var(--dark-cyan);
+}
+
+.adverts h4{
+    font-family: 'Open-Sans', Sans-serif;
+    font-weight:400;
+    font-size:1.1vw;
+    line-height: 1.5;
+    margin-top:0;
+    color:var(--grayish-blue);
+}
+
+/* Grow advert box */
+.grow{
+    margin: 0 auto;
+    display: flex;
+    width:65%;
+    height:20%;
+    border-radius: 1vw;
+    margin-top:5%;
+    padding:3% 5% 3% 9%;
+    box-shadow: 0.1vw 0.1vw 10px 1px hsla(208, 11%, 55%, .1);
+    column-gap:20%;
+}
+
+.grow .text-wrap{
+    align-self:center;
+}
+
+/* Flowing advert box */
+.flowing{
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row-reverse;
+    width:65%;
+    height:20%;
+    border-radius: 1vw;
+    margin-top:5%;
+    padding:3% 5% 3% 9%;
+    box-shadow: 0.1vw 0.1vw 10px 1px hsla(208, 11%, 55%, .1);
+    column-gap:20%;
+}
+
+.flowing .text-wrap{
+    align-self:center;
+}
+
+/* Users advert box */
+
+.users{
+    margin: 0 auto;
+    display: flex;
+    width:65%;
+    height:20%;
+    border-radius: 1vw;
+    margin-top:5%;
+    padding:3% 5% 3% 9%;
+    box-shadow: 0.1vw 0.1vw 10px 1px hsla(208, 11%, 55%, .1);
+    column-gap:20%;
+}
+
+.users .text-wrap{
+    align-self:center;
+}
+
+/* FOOTER */
+footer{
+    background-color:var(--dark-cyan);
+    /* position:relative; */
+}
+
+footer h2{
+    font-size:1.9vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    color:var(--dark-cyan);
+}
+
+.cta{
+    width:50%;
+    /* margin: 0 auto; */
+    margin-top:15%;
+    background-color:white;
+    text-align:center;
+    border-radius:5px;
+    position:relative;
+    left:25%;
+    bottom:10vw;
+    padding:3% 0px;
+    box-shadow: 0.1vw 0.1vw 10px 1px hsla(208, 11%, 55%, .1);
+}
+
+footer button{
+    padding: 3% 11%;
+    border:none;
+    background-color: var(--pink);
+    border-radius:35px;
+    color:white;
+    font-family:'Poppins', sans-serif;
+    font-size:15px;
+    font-weight:600;  
+}
+
+/* ATTRIBUTION */
