@@ -49,7 +49,7 @@ header{
     width:85%;
     margin: 0px auto;
     padding-top:50px;
-    padding-bottom:100px;
+    padding-bottom:10%;
 }
 .head-content h1{
     width:90%;
@@ -298,6 +298,7 @@ small.copyright{
     bottom:12%;
     font-weight:400;
     font-family: "Open Sans", sans-serif;
+    font-size:1vw;
 }
 
 li img{
@@ -319,10 +320,203 @@ li img{
 /* ATTRIBUTION */
 
 
+
 /* 
------- Media Queries ----- 
+----------- 
+Media Queries 
+----------- 
 */
 
 @media screen and (max-width:375px){
+
+    .head-content{
+        width:85%;
+    }
+
+    img.logo{
+        position:absolute;
+        left:0px;
+        top:50px;
+        width:30%;
+    }
+
+    button.topbutton{
+        padding: 1% 5%;
+        font-size:2.7vw;
+        font-weight:600;
+        border-radius:30px;
+        border:none;
+        color:var(--dark-cyan);
+        width:30%;
+        height:auto;
+    }
+
+    .header-flex{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        padding-top:10%;
+        margin: 0px auto;
+    }
+
+    .header-text{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    h1{
+        font-size:5vw;
+        text-align: center;
+    }
+
+    h2{
+        font-size:3.5vw;
+        text-align: center;
+    }
+
+    button.getstarted{
+        font-size:2vw;
+        margin-bottom: 6%;
+    }
+
+    img.hero-image{
+        width: 100%;
+    }
+
+
+    /* Advert sections */
+
+    .adverts img{
+        width:70%;
+        height:auto;
+        border:0px;
+    }
     
+    .adverts h3{
+        font-size:4vw;
+        margin-bottom:3%;
+        text-align:center;
+    }
+    
+    .adverts h4{
+        font-size:2.5vw;
+        line-height: 1.5;
+        margin:0 auto;
+        width:70%;
+        text-align:center;
+    }
+
+    .advbox{
+        padding: 10% 0;
+        margin-bottom: 5%;
+        width:85%;
+    }
+
+    .grow{
+        margin: 5px auto O auto;
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flowing{
+        margin: 5px auto O auto;
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .users{
+        margin: 5px auto O auto;
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer h2{
+        font-size:3.5vw;
+        margin-bottom:0%;
+    }
+
+    .cta{
+        width:80%;
+        position:relative;
+        left:10%;
+        /* bottom:10vw; */
+        /* padding:3% 0px; */
+    }
+
+    footer button{
+        padding: 2% 9%;
+        border:none;
+        background-color: var(--pink);
+        border-radius:35px;
+        color:white;
+        font-family:'Poppins', sans-serif;
+        font-size:1.7vw;
+        font-weight:600; 
+        margin-top:0%;
+    }
+
+    .centerwrap{
+        width:80%;
+    }
+
+    .contentwrap{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .footerlogo{
+        width:40%;
+    }
+
+    footer ul{
+        font-size:3vw;
+        row-gap:1.5vw;
+        color:white;
+    }
+
+    .contact li{
+        font-size:2.8vw;
+        width:70vw;
+    }
+
+    .contact li:not(:first-child){
+        line-height:2.5vw;
+    }
+
+    .contact img{
+        width:4%;
+    }
+
+    .socials{
+        margin: 0 auto;
+        /* align-items: center;
+        justify-content:center; */
+    }
+
+    small.copyright{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position: static;
+        font-weight:400;
+        font-family: "Open Sans", sans-serif;
+        font-size:2vw;
+        color:white;
+    }
+
+    .attr-footer .attribution{
+        font-size:2vw;
+    }
+
 }
