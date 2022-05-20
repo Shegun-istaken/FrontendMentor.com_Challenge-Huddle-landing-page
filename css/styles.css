@@ -15,7 +15,7 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-family: 'Open-Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     margin:0;
     padding:0;
 }
@@ -28,11 +28,14 @@ h1{
 
 h2{
     font-size:1.3vw;
-    font-family: 'Open-Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight:400;
 
 }
 
+button:hover{
+    background-color: hsla(322, 100%, 66%, 0.7);
+}
 /*  HEADER */
 
 header{
@@ -74,13 +77,16 @@ button.topbutton{
     right:0px;
     top:50px;
     background-color:white;
-    padding:11px 55px;
+    padding: 1% 5%;
     font-family:'Poppins', sans-serif;
-    font-size:12px;
-    font-weight:700;
+    font-size:vw;
+    font-weight:600;
     border-radius:30px;
     border:none;
     color:var(--dark-cyan);
+}
+button.topbutton:hover{
+    color: hsla(192, 100%, 9%, 0.7);
 }
 
 button.getstarted{
@@ -89,10 +95,13 @@ button.getstarted{
     padding: 3% 11%;
     border-radius:5vw;
     font-family:'Poppins', sans-serif;
-    font-size:12px;
-    font-weight:700;
+    font-size:1.2vw;
+    font-weight:600;
     color:white;
     margin-top:3%;
+}
+button.getstarted:hover{
+    background-color: hsla(322, 100%, 66%, 0.7);
 }
 
 .header-flex{
@@ -121,7 +130,7 @@ button.getstarted{
 }
 
 .adverts h4{
-    font-family: 'Open-Sans', Sans-serif;
+    font-family: 'Open Sans', Sans-serif;
     font-weight:400;
     font-size:1.1vw;
     line-height: 1.5;
@@ -184,8 +193,9 @@ button.getstarted{
 
 /* FOOTER */
 footer{
-    background-color:var(--dark-cyan);
-    /* position:relative; */
+    background-color: hsla(208, 11%, 55%, 0.9);
+    position:relative;
+    padding-bottom:7%;
 }
 
 footer h2{
@@ -201,7 +211,7 @@ footer h2{
     margin-top:15%;
     background-color:white;
     text-align:center;
-    border-radius:5px;
+    border-radius:10px;
     position:relative;
     left:25%;
     bottom:10vw;
@@ -216,8 +226,103 @@ footer button{
     border-radius:35px;
     color:white;
     font-family:'Poppins', sans-serif;
-    font-size:15px;
-    font-weight:600;  
+    font-size:1.2vw;
+    font-weight:600; 
+}
+
+.footerlogo{
+    display:block;
+    margin-top:-5%;
+    margin-bottom:2%;
+    width:20%;
+}
+ul{
+    font-family: "Open Sans", sans-serif;
+}
+
+.contact{
+    display:flex;
+    flex-direction:column;
+    width:35%;
+}
+
+.about{
+    display:flex;
+    flex-direction:column;
+}
+
+.career{
+    display:flex;
+    flex-direction:column;
+}
+
+.socials{
+    display:flex;
+    flex-direction:row;
+    column-gap:20%;
+}
+
+.socials img{
+    width:2.5vw;
+}
+
+.centerwrap{
+    width:85%;
+    margin: 0 auto;
+}
+.contentwrap{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:flex-start;
+    /* justify-content:space-between; */
+    /* margin-top:-5%; */
+    column-gap:8%;
+
+}
+
+footer ul{
+    list-style:none;
+    font-size:1.3vw;
+    row-gap:1.5vw;
+    font-weight:400;
+    padding:0px;
+}
+
+.contact:first-child{
+    font-size:1.2vw;
+}
+
+small.copyright{
+    position: absolute;
+    right:0px;
+    bottom:12%;
+    font-weight:400;
+    font-family: "Open Sans", sans-serif;
+}
+
+li img{
+    width:1.5vw;
+    height:auto;
+    /* display:inline; */
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+.contact li{
+    display:flex;
+    flex-direction: row;
+    column-gap: 5%;
+    align-items:flex-start;
 }
 
 /* ATTRIBUTION */
+
+
+/* 
+------ Media Queries ----- 
+*/
+
+@media screen and (max-width:375px){
+    
+}
